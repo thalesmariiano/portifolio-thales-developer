@@ -422,6 +422,18 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: madeTommyLight;
+
+  src: url(../fonts/made_tommy_light.otf);
+}
+
+@font-face {
+  font-family: kusanagi;
+
+  src: url(../fonts/kusanagi.otf);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1957,6 +1969,14 @@ video {
 
 .align-super {
   vertical-align: super;
+}
+
+.font-kusanagi {
+  font-family: kusanagi, sans-serif;
+}
+
+.font-madeTommy {
+  font-family: madeTommyLight, sans-serif;
 }
 
 .text-5xl {
