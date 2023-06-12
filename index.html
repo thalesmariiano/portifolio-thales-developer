@@ -6,11 +6,13 @@
 	<link rel="shortcut icon" href="arquivos/images/favicon.png"/>
 
 	<link rel="stylesheet" href="arquivos/css/styles.css">
+	
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 	<title>THΔLES | Web Developer</title>
 </head>
 <body>
-	<section class="w-full h-screen bg-neutral-900">
+	<section class="w-full h-screen bg-neutral-900 relative">
 		<div class="w-full h-full flex flex-col justify-start items-start">
 			<header class="w-full">
 				<div class="flex justify-between items-center px-20 py-5 bg-[#04021d]">
@@ -32,7 +34,7 @@
 					<div class="space-y-8">
 						<div>
 							<p class="text-[#6531e6] font-madeTommy text-2xl">Olá, me chamo</p>
-							<h1 class="text-white font-kusanagi uppercase text-5xl">Thales</h1>
+							<h1 class="text-white font-kusanagi text-shadow uppercase text-5xl">Thales</h1>
 						</div>
 						<div>
 							<p class="text-white font-madeTommy text-2xl leading-7">
@@ -45,7 +47,7 @@
 						</div>
 						<div class="space-x-4">
 							<a class="border-2 border-black font-madeTommy px-3 py-1 text-black text-lg" href="#">Entre em contato</a>
-							<a class="border-2 border-[#04021d] font-madeTommy text-white bg-[#04021d] px-3 py-1 text-lg" href="#">Baixar CV</a>
+							<a class="border-2 border-[#04021d] font-madeTommy text-white bg-[#04021d] px-3 py-1 text-lg shadow-[-3px_3px_0_rgba(0,0,0,.3)]" href="#">Baixar CV</a>
 						</div>
 					</div>
 					<div>
@@ -53,6 +55,9 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="w-full absolute bottom-3 flex justify-center items-center">
+			<img class="w-10" src="arquivos/images/down-icon.svg">
 		</div>
 	</section>
 </body>
