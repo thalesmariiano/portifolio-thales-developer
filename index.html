@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="arquivos/css/styles.css">
 	
-	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+	<script src="https://cdn.tailwindcss.com"></script>
 
 	<title>THΔLES | Web Developer</title>
 </head>
@@ -29,7 +29,7 @@
 						</ul>
 
 						<div class="block md:hidden">
-							<button class="space-y-2">
+							<button id="open-mobile-menu" class="space-y-2">
 								<div class="w-8 h-1 bg-white"></div>
 								<div class="w-8 h-1 bg-white"></div>
 								<div class="w-8 h-1 bg-white"></div>
@@ -38,6 +38,20 @@
 					</nav>
 				</div>
 			</header>
+			<!-- MENU MOBILE -->
+			<div class="w-full h-full bg-neutral-900/70 flex justify-end fixed top-0 left-0">
+				<div class="w-4/6 bg-[#04021d] p-3 flex flex-col justify-start items-end gap-y-5">
+					<button id="close-mobile-menu" class="text-white text-3xl">X</button>
+					<nav>
+						<ul class="text-right space-y-4">
+							<li><a class="text-white font-madeTommy text-2xl hover:text-neutral-400" href="#inicio">Inicio</a></li>
+							<li><a class="text-white font-madeTommy text-2xl hover:text-neutral-400" href="#sobre-mim">Sobre</a></li>
+							<li><a class="text-white font-madeTommy text-2xl hover:text-neutral-400" href="#projetos">Projetos</a></li>
+							<li><a class="text-white font-madeTommy text-2xl hover:text-neutral-400" href="#contato">Contato</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 			<div class="w-full h-full py-8 bg-gradient-to-tr from-[#3d2579] to-[#6531e6]">
 				<div class="w-full h-full flex flex-col-reverse md:flex md:flex-row md:gap-x-5 justify-center items-center px-5 sm:px-20">
 					<div class="space-y-8">
