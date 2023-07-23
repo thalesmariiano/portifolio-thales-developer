@@ -1953,6 +1953,14 @@ video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/images\/me\.png\'\)\] {
+  background-image: url('../images/me.png');
+}
+
+.bg-\[url\(\'\.\/images\/me\.png\'\)\] {
+  background-image: url('./images/me.png');
+}
+
 .from-\[\#3d2579\] {
   --tw-gradient-from: #3d2579 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(61 37 121 / 0) var(--tw-gradient-to-position);
