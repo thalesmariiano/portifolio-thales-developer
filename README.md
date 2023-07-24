@@ -4,8 +4,8 @@ Meu portifolio pesssoal.
 
 ## Design feito por: IV Studio
 
-Instagram: https://instagram.com/ivstudio.design
-Site: https://ivstudio.com.br
+- Instagram: https://instagram.com/ivstudio.design
+- Site: https://ivstudio.com.br
 
 ## Inspiração para a seção de projetos:
 https://anniebombanie.com/#work
