@@ -1,24 +1,266 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html class="scroll-smooth" lang="pt-BR">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="arquivos/images/favicon.png"/>
 
+	<!-- Animate.style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 	<!-- TAILWINDCSS -->
-	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="arquivos/css/styles.css">
+	
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 	<title>THΔLES | Web Developer</title>
 </head>
 <body>
-	<main class="w-full h-screen bg-gradient-to-tr from-[#551fdb] to-[#6531e6]">
-		<div class="w-full h-full flex flex-col gap-y-12 justify-center items-center">
-			<img class="w-72 sm:w-[26rem]" src="arquivos/images/logo_white.png">
-			<div class="text-center">
-				<h1 class="text-zinc-400 font-bold uppercase text-lg sm:text-xl">Estamos em manutenção!</h1>
-				<h1 class="text-zinc-400 font-bold uppercase text-base sm:text-lg">Voltamos em breve.</h1>
+	<!-- Inicio -->
+	<section id="inicio" class="w-full bg-neutral-900 relative">
+		<div class="w-full h-full flex flex-col justify-start items-start">
+			<header class="w-full">
+				<div class="flex justify-between items-center px-10 md:px-20 py-5 bg-[#04021d]">
+					<div>
+						<img class="w-52" src="arquivos/images/logo_purple_white.png" alt="thales web developer logo">
+					</div>
+					<nav>
+						<ul class="md:flex items-center space-x-5 hidden">
+							<li><a href="#inicio" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg bg-[#02002d] px-3">Inicio</a></li>
+							<li><a href="#sobre-mim" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg px-3">Sobre</a></li>
+							<li><a href="#projetos" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg px-3">Projetos</a></li>
+							<li><a href="#contato" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg px-3">Contato</a></li>
+						</ul>
+
+						<div class="block md:hidden">
+							<button id="open-mobile-menu" class="space-y-2">
+								<div class="w-8 h-1 bg-white"></div>
+								<div class="w-8 h-1 bg-white"></div>
+								<div class="w-8 h-1 bg-white"></div>
+							</button>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<!-- MENU MOBILE -->
+			<div id="mobile-menu-container" class="w-full h-full bg-neutral-900/70 flex justify-end fixed top-0 left-0 hidden">
+				<div id="mobile-menu" class="w-4/6 bg-[#04021d] p-3 flex flex-col justify-start items-end gap-y-8 hidden">
+					<button id="close-mobile-menu" class="text-white text-5xl hover:text-[#6531e6] transition">X</button>
+					<nav>
+						<ul class="text-right space-y-4">
+							<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#inicio">Inicio</a></li>
+							<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#sobre-mim">Sobre</a></li>
+							<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#projetos">Projetos</a></li>
+							<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#contato">Contato</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!--  -->
+			<div class="w-full h-full py-8 bg-gradient-to-tr from-[#3d2579] to-[#6531e6]">
+				<div class="w-full h-full flex flex-col-reverse md:flex md:flex-row md:gap-x-5 justify-center items-center px-5 sm:px-20">
+					<div class="space-y-8">
+						<div>
+							<p class="text-[#6531e6] font-madeTommy text-2xl text-center md:text-left">Olá, me chamo</p>
+							<h1 class="text-white font-kusanagi text-shadow uppercase text-5xl text-center md:text-left">Thales</h1>
+						</div>
+						<div>
+							<p class="text-center md:text-left text-white font-madeTommy text-base sm:text-lg xl:text-2xl leading-7 whitespace-nowrap">
+								Estou sempre ávido por absorver <br>
+								conhecimentos sobre as mais recentes <br>
+								tendências e tecnologias do mercado, <br>
+								priorizando miniha constante atualização <br>
+								diante dos desenvolvimentos mais recentes.
+							</p>
+						</div>
+						<div class="w-full text-center md:text-left space-x-4">
+							<a class="border-2 border-black font-madeTommy px-3 py-1 text-black text-lg whitespace-nowrap hover:border-neutral-300 hover:text-neutral-300" href="#contato">Entre em contato</a>
+							<a class="border-2 border-[#04021d] font-madeTommy text-white bg-[#04021d] px-3 py-1 text-lg shadow-[-3px_3px_0_rgba(0,0,0,.3)] whitespace-nowrap transition hover:border-[#6531e6] hover:bg-[#6531e6]" href="arquivos/cv-14-07-2023.pdf" download="curriculo-thales-mariano.pdf" target="_blank">Baixar CV</a>
+						</div>
+					</div>
+					<div>
+						<img class="w-80 sm:min-w-[24rem] md:w-[38rem]" src="arquivos/images/ilustracao_notebook.png" alt="ilutração de notebook com um café do lado">
+					</div>
+				</div>
 			</div>
 		</div>
-	</main>
+		<div class="w-full absolute bottom-3 md:flex justify-center items-center hidden">
+			<img class="w-10" src="arquivos/images/arrow-down-icon.svg">
+		</div>
+	</section>
+	<!-- Sobre mim -->
+	<section id="sobre-mim" class="w-full py-16 bg-[#04021d]">
+		<div class="w-full h-full flex flex-col gap-y-12 justify-center items-center">
+			<div class="flex flex-col md:flex-row gap-x-5 justify-center items-center">
+				<div>
+					<div class="w-72 h-96 bg-[url('../images/me.png')] bg-cover bg-bottom" alt="Thales Mariano foto"></div>
+				</div>
+				<div class="space-y-3">
+					<h1 class="text-[#551fdb] text-xl text-center md:text-left font-madeTommy mt-5 md:mt-0">Sobre mim</h1>
+					<p class="text-white text-sm/5 sm:text-lg/5 text-center md:text-left font-madeTommy whitespace-nowrap">
+						Meu nome é Thales, tenho 20 anos e sou um <br> Web Developer com 1 ano de experiência <br> na programação e desenvolvimento <br> web. Minha paixão pela criação de sites me levou <br> a buscar conhecimentos sólidos em diversas tecnologias <br> e frameworks.
+					</p>
+					<p class="text-white text-sm/5 sm:text-lg/5 text-center md:text-left font-madeTommy whitespace-nowrap">
+						Possuo um conhecimento sólido em tecnologias <br> de front-end, incluindo HTML, TailwindCss, JavaScript e <br> Php. Essa combinação de habilidades me <br> permite criar diariamente aplicações web atrativas, <br> fáceis de usar e que atendem às necessidades <br> específicas de cada projeto. Utilizo essas <br> ferramentas de forma eficiente, garantindo uma <br> experiência de usuário excepcional e uma interface <br> visualmente agradável.
+					</p>
+				</div>
+			</div>
+			<div class="flex justify-center flex-wrap gap-8">
+				<div class="w-20 h-20 flex items-center">
+					<img src="arquivos/images/html5-mark.svg" alt="html5 logo">
+				</div>
+				<div class="w-20 h-20 flex items-center">
+					<img src="arquivos/images/tailwindcss-mark.svg" alt="tailwindcss logo">
+				</div>
+				<div class="w-20 h-20 flex items-center">
+					<img src="arquivos/images/JavaScript-mark.svg" alt="javascript logo">
+				</div>
+				<div class="w-20 h-20 flex items-center">
+					<img src="arquivos/images/php-mark.svg" alt="php logo">
+				</div>
+				<div class="w-20 h-20 flex items-center">
+					<img src="arquivos/images/nodejs-mark.svg" alt="nodejs logo">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Projetos -->
+	<section id="projetos" class="w-full px-5 py-12 bg-gradient-to-r from-[#6531e6] to-[#551fdb]">
+		<div class="w-full h-full flex flex-col gap-y-12 justify-center items-center">
+			<h1 class="text-white font-kusanagi text-shadow uppercase text-4xl sm:text-5xl">Projetos</h1>
+
+			<div class="flex flex-col items-center gap-y-9">
+				<div class="flex flex-col md:flex-row gap-x-8 p-5 bg-[#6531e6]/70 rounded p-2 px-5 w-full max-w-[52rem] shadow-sm hover:-translate-y-2 hover:shadow-md transition">
+					<div>
+						<img class="w-96" src="arquivos/images/banners/venancin-mockup.png" alt="venancin coins site image">
+					</div>
+					<div class="ml-5 mt-5 flex flex-col gap-y-10 md:gap-y-20">
+						<div class="text-center md:text-left">
+							<h1 class="font-bold text-white text-xl">Venancin Coins</h1>
+							<p class="ml-1 text-neutral-950 leading-6">O primeiro freelancer como Front-End que fiz. <br> Tive algumas dificuldades no inicio, <br> mas deu tudo certo no final.</p>
+						</div>
+						<div class="space-x-2 text-center md:text-left">
+							<a class="text-neutral-300 relative border-2 border-[#04021d] px-4 py-1 after:content-[''] after:-z-10 after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#04021d] after:transition-all after:duration-150 hover:after:left-0 hover:after:w-full hover:text-white" href="https://venancincoins.com.br" target="_blank">Acessar</a>
+							<a class="text-neutral-300 relative border-2 border-[#04021d] px-4 py-1 opacity-50 cursor-not-allowed" href="#projetos">Código fonte</a>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col-reverse md:flex-row gap-x-8 p-5 bg-[#6531e6]/70 rounded p-2 px-5 w-full max-w-[52rem] shadow-sm hover:-translate-y-2 hover:shadow-md transition">
+					<div class="mr-5 mt-5 flex flex-col gap-y-10 md:gap-y-20">
+						<div class="text-center md:text-left">
+							<h1 class="font-bold text-white text-xl">Shoot And Slash</h1>
+							<p class="ml-1 text-neutral-950 leading-6">Esse é um projeto pessoal de um jogo 2D <br> estilo hack and slash. Esse é o projeto onde <br> estou usando todo conhecimento de javascript que tenho.</p>
+						</div>
+						<div class="space-x-2 text-center md:text-left">
+							<a class="text-neutral-300 relative border-2 border-[#04021d] px-4 py-1 after:content-[''] after:-z-10 after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#04021d] after:transition-all after:duration-150 hover:after:left-0 hover:after:w-full hover:text-white" href="https://shootandslash.online" target="_blank">Acessar</a>
+							<a class="text-neutral-300 relative border-2 border-[#04021d] px-4 py-1 after:content-[''] after:-z-10 after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#04021d] after:transition-all after:duration-150 hover:after:left-0 hover:after:w-full hover:text-white" href="https://github.com/thalesmariiano/shoot-and-slash" target="_blank">Código fonte</a>
+						</div>
+					</div>
+					<div>
+						<img class="w-96" src="arquivos/images/banners/sas-mockup.png" alt="shoot and slash site image">
+					</div>
+				</div>
+				<div class="flex flex-col md:flex-row gap-x-8 p-5 bg-[#6531e6]/70 rounded p-2 px-5 w-full max-w-[52rem] shadow-sm hover:-translate-y-2 hover:shadow-md transition">
+					<div>
+						<img class="w-96" src="arquivos/images/banners/loops-studio-mockup.png" alt="loops studio site image">
+					</div>
+					<div class="ml-5 mt-5 flex flex-col gap-y-10 md:gap-y-20">
+						<div class="text-center md:text-left">
+							<h1 class="font-bold text-white text-xl">Loops Studio Landing Page</h1>
+							<p class="ml-1 text-neutral-950 leading-6">Uma landing page que fiz para <br> um dos desafios da <a class="text-neutral-900 hover:underline" href="frontendmentor.io" target="_blank">Front-End Mentor.</a> Aprendi <br> bastante sobre grids nesse.</p>
+						</div>
+						<div class="space-x-2 text-center md:text-left">
+							<a class="text-neutral-300 relative border-2 border-[#04021d] px-4 py-1 after:content-[''] after:-z-10 after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#04021d] after:transition-all after:duration-150 hover:after:left-0 hover:after:w-full hover:text-white" href="https://loopstudio-landingpage-thalesmariiano.netlify.app/" target="_blank">Acessar</a>
+							<a class="text-neutral-300 relative border-2 border-[#04021d] px-4 py-1 after:content-[''] after:-z-10 after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#04021d] after:transition-all after:duration-150 hover:after:left-0 hover:after:w-full hover:text-white" href="https://github.com/thalesmariiano/loopstudio-landingpage" target="_blank">Código fonte</a>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col-reverse md:flex-row gap-x-8 p-5 bg-[#6531e6]/70 rounded p-2 px-5 w-full max-w-[52rem] shadow-sm hover:-translate-y-2 hover:shadow-md transition">
+					<div class="mr-5 mt-5 flex flex-col gap-y-10 md:gap-y-20">
+						<div class="text-center md:text-left">
+							<h1 class="font-bold text-white text-xl">Blogr Landing Page</h1>
+							<p class="ml-1 text-neutral-950 leading-6">Uma landing page que fiz para <br> um dos desafios da <a class="text-neutral-900 hover:underline" href="frontendmentor.io" target="_blank">Front-End Mentor.</a> <br> Entendi bastante sobre responsividade nesse aqui.</p>
+						</div>
+						<div class="space-x-2 text-center md:text-left">
+							<a class="text-neutral-300 relative border-2 border-[#04021d] px-4 py-1 after:content-[''] after:-z-10 after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#04021d] after:transition-all after:duration-150 hover:after:left-0 hover:after:w-full hover:text-white" href="https://blogr-landing-page-front-end-mentor.netlify.app/" target="_blank">Acessar</a>
+							<a class="text-neutral-300 relative border-2 border-[#04021d] px-4 py-1 after:content-[''] after:-z-10 after:absolute after:top-0 after:right-0 after:w-0 after:h-full after:bg-[#04021d] after:transition-all after:duration-150 hover:after:left-0 hover:after:w-full hover:text-white" href="https://github.com/thalesmariiano/Blogr-Landing-Page-Main" target="_blank">Código fonte</a>
+						</div>
+					</div>
+					<div>
+						<img class="w-96" src="arquivos/images/banners/blorg-mockup.png" alt="blogr site image">
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="space-x-4">
+				<a href="https://github.com/thalesmariiano" target="_blank" class="border-2 border-[#04021d] font-madeTommy text-white bg-[#04021d] px-4 py-1 text-lg shadow-[-3px_3px_0_rgba(0,0,0,.3)] transition hover:border-[#551fdb] hover:bg-[#551fdb]">Ver mais</a>
+				<a href="#contato" class="border-2 border-[#04021d] font-madeTommy text-white bg-[#04021d] px-4 py-1 text-lg shadow-[-3px_3px_0_rgba(0,0,0,.3)] transition hover:border-[#551fdb] hover:bg-[#551fdb]">Entre em contato</a>
+			</div>
+		</div>
+	</section>
+	<section id="contato" class="w-full py-12 bg-[#04021d]">
+		<div class="w-full h-full flex flex-col gap-y-12 justify-center items-center">
+			<h1 class="text-[#6531e6] font-kusanagi uppercase text-4xl sm:text-5xl">Contato</h1>
+			<div>
+				<form name="contact" method="POST" netlify>
+					<div class="space-y-4 text-center">
+						<div class="space-y-2">
+							<div class="space-y-2 sm:space-y-0 sm:space-x-1 flex flex-col sm:flex-row">
+								<input class="w-60 sm:w-56 pl-4 py-1 text-neutral-500 focus:text-neutral-900" type="text" name="text" placeholder="Nome" autocomplete="off" required>
+								<input class="w-60 pl-4 py-1 text-neutral-500 focus:text-neutral-900" type="email" name="email" placeholder="Email" autocomplete="off" required>
+							</div>
+							<div>
+								<input class="w-full pl-4 py-1 text-neutral-500 focus:text-neutral-900" type="text" name="topic" placeholder="Assunto"autocomplete="off" required> 
+							</div>
+							<div>
+								<textarea class="w-full h-36 pl-4 py-1 text-neutral-500 focus:text-neutral-900" placeholder="Mensagem" autocomplete="off" required></textarea>
+							</div>
+						</div>
+						<button class="px-20 py-1 bg-[#551fdb] hover:bg-[#6531e6] text-white font-madeTommy" type="submit">Enviar</button>
+					</div>
+				</form>
+			</div>
+			<div class="flex gap-x-5">
+				<div class="w-10 h-10 hover:-translate-y-2 transition mt-1">
+					<a href="https://www.twitter.com/dev_thales" target="_blank"><img src="arquivos/images/twitter-mark-white.svg" alt="twitter logo"></a>
+				</div>
+				<div class="w-10 h-10 hover:-translate-y-2 transition">
+					<a href="https://www.instagram.com/dev.thales/" target="_blank"><img src="arquivos/images/instagram-mark-white.svg" alt="instagram logo"></a>
+				</div>
+				<div class="w-10 h-10 hover:-translate-y-2 transition">
+					<a href="https://github.com/thalesmariiano" target="_blank"><img src="arquivos/images/github-mark-white.svg" alt="github logo"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="w-full py-5 bg-[#551fdb]">
+		<div class="w-full flex flex-col gap-y-3 sm:hidden">
+			<div class="w-full text-center">
+				<p class="text-white font-madeTommy text-xs">&copy 2023 <strong>Thales Web Developer</strong>. Todos os diretos reservados.</p>
+				<p class="text-white font-madeTommy text-xs">Design feito por <strong>IV Studio</strong>.</p>
+			</div>
+			<div class="w-full flex justify-center items-center gap-x-4">
+				<div>
+					<a href="https://ivstudio.com.br" target="_blank"><img class="w-32" src="arquivos/images/ivstudio_logo.png" alt="ivstudio logo"></a>
+				</div>
+				<div class="w-px h-8 bg-white"></div>
+				<div>
+					<a href="https://thalesdeveloper.com.br"><img class="w-32" src="arquivos/images/logo_white.png" alt="thales web developer logo"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="w-full h-full sm:flex justify-around items-center hidden">
+			<a href="https://thalesdeveloper.com.br"><img class="w-40" src="arquivos/images/logo_white.png" alt="thales web developer logo"></a>
+			<div class="text-center">
+				<p class="text-white font-madeTommy text-xs">&copy 2023 <strong>Thales Web Developer</strong>. Todos os diretos reservados.</p>
+				<p class="text-white font-madeTommy text-xs">Design feito por <strong>IV Studio</strong>.</p>
+			</div>
+			<a href="https://ivstudio.com.br" target="_blank"><img class="w-40" src="arquivos/images/ivstudio_logo.png" alt="ivstudio logo"></a>
+		</div>
+	</footer>
+
+	<script src="arquivos/js/main.js"></script>
 </body>
 </html>
