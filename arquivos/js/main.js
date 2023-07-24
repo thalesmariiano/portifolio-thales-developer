@@ -16,19 +16,30 @@ closeMobileMenu.addEventListener("click", () => {
 const addAnimation = (element, animation) => {
 	element.classList.remove("hidden")
 	element.classList.add(animation, "animate__animated")
+	element.addEventListener("animationend", endAnimation)
 
-	element.addEventListener("animationend", () => {
+	function endAnimation(){
 		element.classList.remove(animation, "animate__animated")
-	})
+		element.removeEventListener("animationend", endAnimation)
+	}
 }
 
 const removeAnimation = (element, animation) => {
 	element.classList.add(animation, "animate__animated")
+	element.addEventListener("animationend", endAnimation)
 
-	element.addEventListener("animationend", () => {
+	function endAnimation(){
 		element.classList.add("hidden")
 		element.classList.remove(animation, "animate__animated")
-	})
+		element.removeEventListener("animationend", endAnimation)
+	}
 }
 
-window.resize = () => mobileMenuContainer.classList.add("hidden")
+onresize = function(){
+	if(innerWidth >= 768) return
+
+	mobileMenu.classList.add("hidden")
+	mobileMenuContainer.classList.add("hidden")
+	mobileMenu.classList.remove("animate__animated", "animate__fadeIn", "animate__fadeOut")
+	mobileMenuContainer.classList.remove("animate__animated", "animate__fadeInRight", "animate__fadeOutRight")
+}
