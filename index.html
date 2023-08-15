@@ -16,47 +16,50 @@
 	<title>THΔLES | Web Developer</title>
 </head>
 <body>
+
+	<!-- HEADER NAV -->
+	<header class="w-full">
+		<div class="flex justify-between items-center px-10 md:px-20 py-5 bg-[#04021d]">
+			<div>
+				<img class="w-52" src="arquivos/images/logo_purple_white.png" alt="thales web developer logo">
+			</div>
+			<nav>
+				<ul class="md:flex items-center space-x-5 hidden">
+					<li><a href="#inicio" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg bg-[#02002d] px-3">Inicio</a></li>
+					<li><a href="#sobre-mim" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg px-3">Sobre</a></li>
+					<li><a href="#projetos" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg px-3">Projetos</a></li>
+					<li><a href="#contato" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg px-3">Contato</a></li>
+				</ul>
+
+				<div class="block md:hidden">
+					<button id="open-mobile-menu" class="space-y-2">
+						<div class="w-8 h-1 bg-white"></div>
+						<div class="w-8 h-1 bg-white"></div>
+						<div class="w-8 h-1 bg-white"></div>
+					</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- MENU MOBILE -->
+	<div id="mobile-menu-container" class="w-full h-full bg-neutral-900/70 flex justify-end fixed top-0 left-0 z-10 hidden">
+		<div id="mobile-menu" class="w-4/6 bg-[#04021d] p-3 flex flex-col justify-start items-end gap-y-8 hidden">
+			<button id="close-mobile-menu" class="text-white text-5xl hover:text-[#6531e6] transition">X</button>
+			<nav>
+				<ul class="text-right space-y-4">
+					<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#inicio">Inicio</a></li>
+					<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#sobre-mim">Sobre</a></li>
+					<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#projetos">Projetos</a></li>
+					<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
 	<!-- Inicio -->
 	<section id="inicio" class="w-full bg-neutral-900 relative">
 		<div class="w-full h-full flex flex-col justify-start items-start">
-			<header class="w-full">
-				<div class="flex justify-between items-center px-10 md:px-20 py-5 bg-[#04021d]">
-					<div>
-						<img class="w-52" src="arquivos/images/logo_purple_white.png" alt="thales web developer logo">
-					</div>
-					<nav>
-						<ul class="md:flex items-center space-x-5 hidden">
-							<li><a href="#inicio" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg bg-[#02002d] px-3">Inicio</a></li>
-							<li><a href="#sobre-mim" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg px-3">Sobre</a></li>
-							<li><a href="#projetos" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg px-3">Projetos</a></li>
-							<li><a href="#contato" class="text-[#551fdb] hover:text-[#6e3bed] transition font-madeTommy text-lg px-3">Contato</a></li>
-						</ul>
-
-						<div class="block md:hidden">
-							<button id="open-mobile-menu" class="space-y-2">
-								<div class="w-8 h-1 bg-white"></div>
-								<div class="w-8 h-1 bg-white"></div>
-								<div class="w-8 h-1 bg-white"></div>
-							</button>
-						</div>
-					</nav>
-				</div>
-			</header>
-			<!-- MENU MOBILE -->
-			<div id="mobile-menu-container" class="w-full h-full bg-neutral-900/70 flex justify-end fixed top-0 left-0 z-10 hidden">
-				<div id="mobile-menu" class="w-4/6 bg-[#04021d] p-3 flex flex-col justify-start items-end gap-y-8 hidden">
-					<button id="close-mobile-menu" class="text-white text-5xl hover:text-[#6531e6] transition">X</button>
-					<nav>
-						<ul class="text-right space-y-4">
-							<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#inicio">Inicio</a></li>
-							<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#sobre-mim">Sobre</a></li>
-							<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#projetos">Projetos</a></li>
-							<li><a class="text-white font-madeTommy text-2xl hover:text-[#6531e6] transition" href="#contato">Contato</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<!--  -->
 			<div class="w-full h-full py-8 bg-gradient-to-tr from-[#3d2579] to-[#6531e6]">
 				<div class="w-full h-full flex flex-col-reverse md:flex md:flex-row md:gap-x-5 justify-center items-center px-5 sm:px-20">
 					<div class="space-y-8">
