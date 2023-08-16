@@ -43,3 +43,23 @@ onresize = function(){
 	mobileMenu.classList.remove("animate__animated", "animate__fadeIn", "animate__fadeOut")
 	mobileMenuContainer.classList.remove("animate__animated", "animate__fadeInRight", "animate__fadeOutRight")
 }
+
+const controller = new ScrollMagic.Controller()
+
+const inicio_scene = new ScrollMagic.Scene({triggerElement: "#inicio", duration: "90%"})
+.setClassToggle("#inicio-link", "text-red-500")
+.addIndicators()
+inicio_scene.offset(30)
+.addTo(controller)
+
+const sobre_mim_scene = new ScrollMagic.Scene({triggerElement: "#sobre-mim", duration: "90%"})
+.setClassToggle("#sobre-mim-link", "text-red-500")
+.addIndicators()
+sobre_mim_scene.offset(190)
+.addTo(controller)
+
+const projetos_scene = new ScrollMagic.Scene({triggerElement: "#projetos", duration: "100%"})
+.setClassToggle("#projetos-link", "text-red-500")
+.addIndicators()
+projetos_scene.offset(240)
+.addTo(controller)
