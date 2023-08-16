@@ -44,22 +44,30 @@ onresize = function(){
 	mobileMenuContainer.classList.remove("animate__animated", "animate__fadeInRight", "animate__fadeOutRight")
 }
 
+const projetos = document.querySelector("#projetos")
+
 const controller = new ScrollMagic.Controller()
 
 const inicio_scene = new ScrollMagic.Scene({triggerElement: "#inicio", duration: "90%"})
 .setClassToggle("#inicio-link", "text-red-500")
-.addIndicators()
+// .addIndicators()
 inicio_scene.offset(30)
 .addTo(controller)
 
 const sobre_mim_scene = new ScrollMagic.Scene({triggerElement: "#sobre-mim", duration: "90%"})
 .setClassToggle("#sobre-mim-link", "text-red-500")
-.addIndicators()
+// .addIndicators()
 sobre_mim_scene.offset(190)
 .addTo(controller)
 
-const projetos_scene = new ScrollMagic.Scene({triggerElement: "#projetos", duration: "100%"})
+const projetos_scene = new ScrollMagic.Scene({triggerElement: "#projetos", duration: projetos.clientHeight - 200})
 .setClassToggle("#projetos-link", "text-red-500")
-.addIndicators()
+// .addIndicators()
 projetos_scene.offset(240)
+.addTo(controller)
+
+const contato = new ScrollMagic.Scene({triggerElement: "#contato", duration: "90%"})
+.setClassToggle("#contato-link", "text-red-500")
+// .addIndicators()
+contato.offset(40)
 .addTo(controller)
