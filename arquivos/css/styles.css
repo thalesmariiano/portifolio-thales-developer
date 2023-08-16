@@ -1105,6 +1105,10 @@ video {
   scroll-snap-stop: always;
 }
 
+.scroll-mt-24 {
+  scroll-margin-top: 6rem;
+}
+
 .list-inside {
   list-style-position: inside;
 }
@@ -2387,6 +2391,11 @@ video {
   color: rgb(101 49 230 / var(--tw-text-opacity));
 }
 
+.text-\[\#7449de\] {
+  --tw-text-opacity: 1;
+  color: rgb(116 73 222 / var(--tw-text-opacity));
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2420,6 +2429,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#cab6fa\] {
+  --tw-text-opacity: 1;
+  color: rgb(202 182 250 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2886,6 +2900,11 @@ video {
 .hover\:text-\[\#6e3bed\]:hover {
   --tw-text-opacity: 1;
   color: rgb(110 59 237 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#7449de\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(116 73 222 / var(--tw-text-opacity));
 }
 
 .hover\:text-neutral-300:hover {
