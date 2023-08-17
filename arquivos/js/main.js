@@ -48,6 +48,11 @@ const projetos = document.querySelector("#projetos")
 
 const controller = new ScrollMagic.Controller()
 
+const navigation_scene = new ScrollMagic.Scene({triggerElement: "#inicio", duration: "90%"})
+	navigation_scene.offset(100)
+	navigation_scene.setClassToggle("#logo", "w-52")
+	navigation_scene.addTo(controller)
+
 const inicio_scene = new ScrollMagic.Scene({triggerElement: "#inicio", duration: "90%"})
 	  inicio_scene.setClassToggle("#inicio-link", "text-[#cab6fa]")
 	  inicio_scene.offset(30)
