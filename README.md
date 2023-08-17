@@ -14,3 +14,4 @@ https://anniebombanie.com/#work
 - HTML5
 - TailwindCss
 - Javascript
+- ScrollMagic
