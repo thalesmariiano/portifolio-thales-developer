@@ -43,3 +43,32 @@ onresize = function(){
 	mobileMenu.classList.remove("animate__animated", "animate__fadeIn", "animate__fadeOut")
 	mobileMenuContainer.classList.remove("animate__animated", "animate__fadeInRight", "animate__fadeOutRight")
 }
+
+const projetos = document.querySelector("#projetos")
+
+const controller = new ScrollMagic.Controller()
+
+const navigation_scene = new ScrollMagic.Scene({triggerElement: "#inicio", duration: "90%"})
+	navigation_scene.offset(100)
+	navigation_scene.setClassToggle("#logo", "w-52")
+	navigation_scene.addTo(controller)
+
+const inicio_scene = new ScrollMagic.Scene({triggerElement: "#inicio", duration: "90%"})
+	  inicio_scene.setClassToggle("#inicio-link", "text-[#cab6fa]")
+	  inicio_scene.offset(30)
+	  inicio_scene.addTo(controller)
+
+const sobre_mim_scene = new ScrollMagic.Scene({triggerElement: "#sobre-mim", duration: "90%"})
+	  sobre_mim_scene.setClassToggle("#sobre-mim-link", "text-[#cab6fa]")
+	  sobre_mim_scene.offset(190)
+      sobre_mim_scene.addTo(controller)
+
+const projetos_scene = new ScrollMagic.Scene({triggerElement: "#projetos", duration: projetos.clientHeight - 200})
+	  projetos_scene.setClassToggle("#projetos-link", "text-[#cab6fa]")
+	  projetos_scene.offset(240)
+ 	  projetos_scene.addTo(controller)
+
+const contato_scene = new ScrollMagic.Scene({triggerElement: "#contato", duration: "90%"})
+	  contato_scene.setClassToggle("#contato-link", "text-[#cab6fa]")
+	  contato_scene.offset(40)
+	  contato_scene.addTo(controller)
