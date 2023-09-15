@@ -2019,10 +2019,6 @@ video {
   background-image: url('../images/me.png');
 }
 
-.bg-\[url\(\'arquivos\/images\/me\.png\'\)\] {
-  background-image: url('arquivos/images/me.png');
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
